@@ -9,7 +9,7 @@ app.set('view engine','pug');
 app.set('views',path.join(__dirname,'views'));
 app.use(express.json());
 app.use(require('./routes/auth'));
-const DB = 'mongodb+srv://Shivam:Shivam7607786507@cluster0.oysfx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';  
+const DB = '';  //your mongodb uri string
 mongoose.connect(DB).then(()=>{
     console.log("Connected to database successfully");
 }).catch((err)=>{
